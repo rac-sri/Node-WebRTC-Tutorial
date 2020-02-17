@@ -16,8 +16,8 @@ if(args.help || !args.file){
 }
 
 var say = require('./helloworld');
-say.say(args.file , function(err ,contents){
-    console.log("asjkdhaskj")
-    console.log(contents.toString())
-}
-)
+say.asq(args.file).val(function(content){
+    console.log(content.toString())
+}).or(function(err){
+    console.log("error: " + err);
+})
