@@ -36,7 +36,6 @@ function handleIO(socket){
     })
 
     socket.on("spy", function(x,y){
-        console.log("spy")
         socket.broadcast.emit("spy",{x:x , y:y});
     })
     
