@@ -1,0 +1,26 @@
+{
+  "name": "node-webrtc-tutuorial",
+  "version": "1.0.0",
+  "description": "",
+  "main": "1.js",
+  "dependencies": {
+    "asynquence": "^0.10.2",
+    "asynquence-contrib": "^0.28.2",
+    "minimist": "^1.2.0",
+    "fs": "^0.0.1-security"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rachit2501/Node-WebRTC-Tutuorial.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rachit2501/Node-WebRTC-Tutuorial/issues"
+  },
+  "homepage": "https://github.com/rachit2501/Node-WebRTC-Tutuorial#readme"
+}
