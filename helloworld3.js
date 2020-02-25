@@ -2,6 +2,7 @@ function readFile(filename , cb){
    return ASQ(function(done){
        var stream = fs.createReadStream(filename);
        stream.on("data" , function(chunk){
+        //if buffer size exceeded it gets called several time importing file in chunks
            contents += chunk;
        });
        stream.on("end" , function(){
