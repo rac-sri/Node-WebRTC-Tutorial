@@ -8,7 +8,8 @@
     "asynquence-contrib": "^0.28.2",
     "fs": "^0.0.1-security",
     "minimist": "^1.2.0",
-    "node-static": "^0.7.11"
+    "node-static": "^0.7.11",
+    "socket.io": "^0.9.19"
   },
   "devDependencies": {},
   "scripts": {
