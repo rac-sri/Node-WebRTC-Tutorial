@@ -48,7 +48,13 @@ function connection(socket) {
 		}
 	}
 
+	function onSignal(msg) {
+		console.log("relaying signal:",msg);
+		socket.broadcast.emit("signal",msg);
+	}
+
 	socket.on("disconnect",disconnect);
+	socket.on("signal",onSignal);
 
 	// is there a channel waiting for a socket to join it?
 	if (
@@ -89,7 +95,7 @@ var
 	http = require("http"),
 	httpserv = http.createServer(handleHTTP),
 
-	port = 8006,
+	port = 8500,
 	host = "127.0.0.1",
 
 	ASQ = require("asynquence"),

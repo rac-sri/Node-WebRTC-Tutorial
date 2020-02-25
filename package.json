@@ -1,28 +1,12 @@
 {
-  "name": "node-webrtc-tutuorial",
-  "version": "1.0.0",
-  "description": "",
-  "main": "1.js",
-  "dependencies": {
-    "asynquence": "^0.10.2",
-    "asynquence-contrib": "^0.28.2",
-    "fs": "^0.0.1-security",
-    "minimist": "^1.2.0",
-    "node-static": "^0.7.11",
-    "socket.io": "^0.9.19"
-  },
-  "devDependencies": {},
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/rachit2501/Node-WebRTC-Tutuorial.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/rachit2501/Node-WebRTC-Tutuorial/issues"
-  },
-  "homepage": "https://github.com/rachit2501/Node-WebRTC-Tutuorial#readme"
+	"name": "helloworld",
+	"version": "0.0.1-a",
+	"description": "hello world",
+	"main": "./helloworld3.js",
+	"keywords": [
+		"hello",
+		"world"
+	],
+	"author": "Kyle Simpson <getify@gmail.com>",
+	"license": "MIT"
 }

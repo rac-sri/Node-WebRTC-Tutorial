@@ -1,17 +1,9 @@
 function readTheFile(filename) {
-	return ASQ(function(done){
-		var stream = fs.createReadStream(filename);
-		var data = "";
+	var sq = ASQ();
 
-		stream.pipe(fs.createWriteStream(filename+".backup"));
+	fs.readFile( filename, sq.errfcb() );
 
-		stream.on("data",function(chunk){
-			data += chunk;
-		});
-		stream.on("end",function(){
-			done(data);
-		});
-	});
+	return sq;
 }
 
 function delayMsg(done,msg) {
